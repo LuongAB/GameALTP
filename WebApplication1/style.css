@@ -1,0 +1,56 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.container {
+	max-width: 80vw;
+	margin: 0 auto;
+	background-color: orange;
+}
+
+ul {
+	list-style: none;
+}
+
+button,input[type="submit"] {
+	cursor: pointer;
+	border: none;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+header {
+	padding-top: 5vh;
+}
+
+nav {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+main {
+	padding-top: 5vh;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.answer {
+	display: flex;
+}
+
+.button_answer {
+	flex: 1;
+}
+
+#btnAsk{
+	width : 30px;
+	height : 30px;
+	margin-left : 10px;
+	border : 1px solid #000000;
+	background-color : #ffffff;
+}
