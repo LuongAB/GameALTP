@@ -17,7 +17,9 @@ namespace WebApplication1
 
     protected void Session_Start(object sender, EventArgs e)
     {
-
+      Session["user"] = null;
+      Session["help50"] = true;
+      Session["helpAsk"] = true;
     }
 
     protected void Application_BeginRequest(object sender, EventArgs e)
@@ -37,12 +39,13 @@ namespace WebApplication1
 
     protected void Session_End(object sender, EventArgs e)
     {
-
+      Session.Abandon();
+      Response.Cookies.Clear();
     }
 
     protected void Application_End(object sender, EventArgs e)
     {
-
+     
     }
   }
 }

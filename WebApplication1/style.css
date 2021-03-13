@@ -1,56 +1,174 @@
+/*Default*/
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    color: #fff;
 }
 
 .container {
-	max-width: 80vw;
-	margin: 0 auto;
-	background-color: orange;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(49, 44, 81, 1) url('background.png') no-repeat fixed center;
+    display: flex;
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
+    flex-direction: column;
 }
 
 ul {
-	list-style: none;
+    list-style: none;
 }
 
-button,input[type="submit"] {
-	cursor: pointer;
-	border: none;
-	padding: 10px;
-	border-radius: 5px;
+input[type="text"] {
+    padding: 5px 10px;
+    border: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
 }
 
+input[type="submit"] {
+    cursor: pointer;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+    input[type="submit"]:hover {
+        background-color: #b4aee8;
+    }
+
+/*Header*/
 header {
-	padding-top: 5vh;
+    padding-top: 2vh;
+    display: flex;
+    -webkit-justify-content: space-evenly;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
-nav {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: space-evenly;
+#logo {
+    width: 100px;
+    height: 100px;
+}
+
+.PlLogin, .wrapp_content {
+    display: flex;
+    -ms-flex-direction: row;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+}
+
+#btnLogin {
+    margin-left: 15px;
+    font-size: 1.1rem;
+}
+
+#lbName {
+    font-size: 1.6rem;
+}
+
+/*Main*/
+.wrapp_content {
+    -webkit-justify-content: space-evenly;
+    justify-content: space-evenly;
+    padding-top: 3vh;
 }
 
 main {
-	padding-top: 5vh;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
+    display: flex;
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+}
+
+.user {
+    display: inherit;
+    -ms-flex-direction: row;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+    .user img:nth-child(2) {
+        margin-left: 80px;
+    }
+
+.icon_user {
+    width: 200px;
+    height: 200px;
+}
+
+#TimeLeft {
+    position: fixed;
+    left: 55vw;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.content {
+    text-align: center;
+    background-color: rgba(0,0,0,0.7);
+    border: 1px solid #ffd800;
+    padding: 20px 40px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+/*Aside*/
+aside {
+    font-weight: 700;
+}
+
+#lbQuestion {
+    font-size: 1.5rem;
+    font-weight: 500;
 }
 
 .answer {
-	display: flex;
+    display: flex;
 }
 
-.button_answer {
-	flex: 1;
+#QuestionList input {
+    width: 20px;
+    height: 20px;
+    margin-top: 25px;
 }
 
-#btnAsk{
-	width : 30px;
-	height : 30px;
-	margin-left : 10px;
-	border : 1px solid #000000;
-	background-color : #ffffff;
+#QuestionList label {
+    margin-left: 10px;
+    font-size: 1.2rem;
+}
+
+table {
+    margin-left: 50px;
+    border-spacing: 30px;
+}
+
+#AnswerList td {
+    padding: 15px 40px;
+    border: 1px solid #ffffff;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+    #AnswerList td:hover {
+        background-color: #f3ce5b;
+        color : #000000;
+        font-weight : 600;
+    }
+
+#AnswerList input {
+    display: none;
+}
+
+#AnswerList label {
+    cursor: pointer;
 }

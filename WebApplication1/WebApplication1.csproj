@@ -67,14 +67,24 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="background.png" />
+    <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="icon_help_1.png" />
     <Content Include="icon_user.png" />
     <Content Include="Index.aspx" />
+    <Content Include="logo.png" />
+    <Content Include="music_bg.wav" />
+    <Content Include="music_corect.wav" />
+    <Content Include="music_end.wav" />
+    <Content Include="music_failure.wav" />
+    <Content Include="music_help_50.wav" />
+    <Content Include="music_help_call.wav" />
     <Content Include="style.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DBHelper.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
