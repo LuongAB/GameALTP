@@ -9,12 +9,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ai là triệu phú</title>
     <link rel="shortcut icon" type="image/x-icon" href="~/favicon.ico" />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
     <form id="form1" runat="server">
         <section class="container">
-
+            <div id="divModal" runat="server" class="modalDialog" visible="false">
+                <div>
+                    <asp:LinkButton ID="lbtnModalClose" runat="server" CssClass="close" Text="X" OnClick="CloseModal" />
+                    <h3>Thông báo</h3>
+                    <asp:Label ID="Label1" runat="server" Text="Nội dung modal"></asp:Label>
+                    <br />
+                </div>
+            </div>
             <header>
                 <img src="logo.png" alt="logo" id="logo" />
                 <asp:PlaceHolder ID="PlLogin" runat="server">
@@ -28,7 +35,6 @@
                     <label>Người chơi : </label>
                     <asp:Label ID="lbName" runat="server" Text="Name"></asp:Label>
                 </asp:PlaceHolder>
-
                 <section class="help">
                     <asp:Button ID="btnDel50" runat="server" Text="50 : 50" CssClass="help_button" OnClick="btnDel50_Click" />
                     <asp:Button ID="btnCall" runat="server" Text="Gọi điện" OnClick="btnCall_Click" />
@@ -68,7 +74,6 @@
                     </asp:CheckBoxList>
                 </aside>
             </section>
-
         </section>
     </form>
 </body>
